@@ -73,36 +73,42 @@
 
 // 6. qu = akta array theke sob theke boro nam ta output hisabe dekate hobe;
 
-// var friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom"];
-// let init = 0 ;
-// let large = " "
-// for (i = 0; i < friends.length; i++) {
-//     if (friends[i].length > init) {
-//         init = friends[i].length;
-//         large = friends[i];
+var friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom"];
+let init = 0 ;
+let large = " "
+for (i = 0; i < friends.length; i++) {
+    if (friends[i].length > init) {
+        init = friends[i].length;
+        large = friends[i];
         
-//     }
-// }
+    }
+}
 // console.log(large) ;
 
 // 7. find the duplicate and remove them 
 
-// var numbers = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10];
+var numbers = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10];
+var Newarray = [];
+for( var i = 0; i < numbers.length; i++) {
+    if (Newarray.indexOf(numbers[i]) == -1) {
+        Newarray.push(numbers[i]);
+    }
+}
+console.log(Newarray);
 
-// for(i = 0; i < numbers.length; i++) {
-//     console.log(numbers[i]);
-// }
+
+
+
+
 
 // 8. uporer sob theke boro number ber koro 
-var numbers = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10];
-let elementNumber = 0;
-let largeNumber = "" ;
+var numbers = [1, 2, 3, 3, 4, 4, 44, 5, 6, 7, 8, 9, 10];
+// let elementNumber = 0;
+let largeNumber = 1 ;
 for ( i = 0; i< numbers.length; i++) {
-    if(numbers[i]> elementNumber){
-        elementNumber = numbers[i];
+    if(numbers[i]> largeNumber){
         largeNumber = numbers[i];
 
     }
-    console.log(elementNumber);
 }
-console.log(largeNumber);
+// console.log(largeNumber);
